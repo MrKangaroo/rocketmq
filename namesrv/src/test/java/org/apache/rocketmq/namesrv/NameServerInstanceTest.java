@@ -23,6 +23,7 @@ import org.junit.Before;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+// TODO fox-fork NAMESERV Start...
 public class NameServerInstanceTest {
     protected NamesrvController nameSrvController = null;
     protected NettyServerConfig nettyServerConfig = new NettyServerConfig();

@@ -28,6 +28,7 @@ import org.apache.rocketmq.common.message.MessageExt;
 /**
  * This example shows how to subscribe and consume messages using providing {@link DefaultMQPushConsumer}.
  */
+// TODO fox-fork
 public class Consumer {
 
     public static void main(String[] args) throws InterruptedException, MQClientException {
@@ -48,6 +49,8 @@ public class Consumer {
          * }
          * </pre>
          */
+
+        consumer.setNamesrvAddr("127.0.0.1:9876");
 
         /*
          * Specify where to start in case the specified consumer group is a brand new one.

@@ -426,6 +426,7 @@ public class RouteInfoManager {
         return null;
     }
 
+    //TODO fox-fork 关闭两分钟未更新的broker
     public void scanNotActiveBroker() {
         Iterator<Entry<String, BrokerLiveInfo>> it = this.brokerLiveTable.entrySet().iterator();
         while (it.hasNext()) {
